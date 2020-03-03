@@ -1,0 +1,42 @@
+.navBar_container{
+    border: 1px solid black;
+    box-shadow: 0 1px 8px rgb(87, 86, 86);
+    .toNavBar_container {
+        display: flex;
+        justify-content: space-between;
+        .img_container {
+            display: flex;
+            align-items: center;
+        }
+        .logIn_signUp_Container {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 11px;
+            margin-top: 22px;
+            width: 120px;
+            font-size: 14px;
+            a {
+                color: black;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+    .navLinks {
+        display: flex;
+        justify-content: center;
+        border: 0.5px solid black;
+        a {
+            display: flex;
+            align-items: center;
+            padding: 5px 20px;
+            height: 100%;
+            color: rgb(88, 87, 87);
+            font-weight: bold;
+            text-decoration: none;
+            &.active {
+                color: black;
+            }
+        }
+    }
+}
