@@ -5,13 +5,13 @@ const initialState = {
 }
 
 const planetsReducer = (state = initialState, action) => {
-    switch (actionTypes.SAVE_PLANETS_DATA) {
+    switch (action.type) {
         case actionTypes.SAVE_PLANETS_DATA:
             return {
                 ...state,
                 planetsDataResult: state
                     .planetsDataResult
-                    .concat([action.response])
+                    .concat(action.response)
             }
         default:
             return {

@@ -5,13 +5,13 @@ const initialState = {
 }
 
 const vehiclesReducer = (state = initialState, action) => {
-    switch (actionTypes.SAVE_VEHICLES_DATA) {
+    switch (action.type) {
         case actionTypes.SAVE_VEHICLES_DATA:
             return {
                 ...state,
                 vehiclesDataResult: state
                     .vehiclesDataResult
-                    .concat([action.response])
+                    .concat(action.response)
             }
         default:
             return {

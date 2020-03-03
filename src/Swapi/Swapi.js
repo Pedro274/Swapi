@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './Swapi.scss';
 import {connect} from 'react-redux'
 
@@ -13,15 +13,17 @@ import * as actionCreators from '../Store/Action/ActionCreators/ActionCreators_F
 
 function Swapi(props) {
 
-    
-props.FetchData('films');
-props.FetchData('people');
-props.FetchData('starships');
-props.FetchData('species');
-props.FetchData('vehicles');
-props.FetchData('planets');
-            
-    
+    const {FetchData} = props
+
+        useEffect(() => {
+            FetchData('films')
+            FetchData('people')
+            FetchData('planets')
+            FetchData('species')
+            FetchData('vehicles')
+            FetchData('starships')
+        }, [FetchData])
+       
 
     return (
         <div>
@@ -41,6 +43,6 @@ const mapDispatchToProps = dispatch => {
     return {
         FetchData: (apiKeyWord) => dispatch(actionCreators.getData(apiKeyWord))
     }
-}
+};
 
 export default connect(null, mapDispatchToProps)(Swapi)

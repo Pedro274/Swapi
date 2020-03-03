@@ -12,7 +12,7 @@ import filmReducer from './Store/Reducers/FilmsReducer';
 import peopleReducer from './Store/Reducers/PeopleReducer';
 import planetsReducer from './Store/Reducers/PlanetsReducer';
 import starShipsReducer from './Store/Reducers/StarShipsReducer';
-import vehiclesReducer from './Store/Reducers/VehicleReducer';
+import vehiclesReducer from './Store/Reducers/VehiclesReducer';
 import speciesReducer from './Store/Reducers/SpeciesReducer'
 
 const reducer = combineReducers({
@@ -20,9 +20,10 @@ const reducer = combineReducers({
     people: peopleReducer,
     planets: planetsReducer,
     starShips: starShipsReducer,
-    vehicle: vehiclesReducer,
+    vehicles: vehiclesReducer,
     species: speciesReducer
 })
+
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)));

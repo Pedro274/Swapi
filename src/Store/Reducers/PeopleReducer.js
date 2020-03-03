@@ -5,13 +5,13 @@ const initialState = {
 }
 
 const peopleReducer = (state = initialState, action) => {
-    switch (actionTypes.SAVE_PEOPLE_DATA) {
+    switch (action.type) {
         case actionTypes.SAVE_PEOPLE_DATA:
             return {
                 ...state,
                 peopleDataResult: state
                     .peopleDataResult
-                    .concat([action.response])
+                    .concat(action.response)
             }
         default:
             return {

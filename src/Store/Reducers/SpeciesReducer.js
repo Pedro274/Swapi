@@ -1,17 +1,17 @@
 import * as actionTypes from '../Action/ActionTypes';
 
 const initialState = {
-    speciesDataResult: [],
+    speciesDataResult: []
 }
 
 const speciesReducer = (state = initialState, action) => {
-    switch (actionTypes.SAVE_SPECIES_DATA) {
+    switch (action.type) {
         case actionTypes.SAVE_SPECIES_DATA:
             return {
                 ...state,
                 speciesDataResult: state
                     .speciesDataResult
-                    .concat([action.response])
+                    .concat(action.response)
             }
         default:
             return {

@@ -5,13 +5,13 @@ const initialState = {
 }
 
 const filmsReducer = (state = initialState, action) => {
-    switch (actionTypes.SAVE_FILMS_DATA) {
+    switch (action.type) {
         case actionTypes.SAVE_FILMS_DATA:
             return {
                 ...state,
                 filmsDataResult: state
                     .filmsDataResult
-                    .concat([action.response])
+                    .concat(action.response)
             }
         default:
             return {
