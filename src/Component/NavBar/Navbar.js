@@ -17,7 +17,9 @@ function Navbar() {
                         height='100px'/>
                 </div>
                 <div className='logIn_signUp_Container'>
-                    <Link to= '/LogIn'>LOG IN</Link>
+                    <div className='SignUp_button'>
+                        <Link to='/SignUp'>LOG IN</Link>
+                    </div>
                 </div>
             </div>
             <div className='navLinks'>

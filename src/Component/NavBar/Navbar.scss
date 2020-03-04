@@ -10,16 +10,19 @@
         }
         .logIn_signUp_Container {
             display: flex;
-            justify-content: space-between;
             margin-right: 11px;
-            margin-top: 22px;
-            width: 120px;
+            align-items: center;
             font-size: 14px;
-            a {
-                color: black;
-                font-weight: bold;
-                text-decoration: none;
+            .SignUp_button {
+                border: 1px solid black;
+                a {
+                    color: black;
+                    font-weight: bold;
+                    text-decoration: none;
+                    margin: 12px;
+                }
             }
+           
         }
     }
     .navLinks {

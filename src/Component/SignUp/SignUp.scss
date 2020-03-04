@@ -1,0 +1,30 @@
+.SignUp_container {
+    display: flex;
+    justify-content: center;
+    
+    .form_container {
+        margin-top: 150px;
+        border: 1px solid black;
+        box-shadow: 0 0 2px black;
+        border-radius: 12px;
+        width: 30%;
+    }
+
+    .input_container {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        input{
+            margin: 12px;
+        }
+    }
+
+    .button_container {
+        button {
+            margin: 12px
+        }
+    }
+
+}
+
+

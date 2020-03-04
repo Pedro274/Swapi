@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App/App';
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.css';
 
 import {createStore,combineReducers,applyMiddleware,compose} from 'redux';
 import thunk from 'redux-thunk'

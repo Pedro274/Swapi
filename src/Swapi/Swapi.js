@@ -7,6 +7,7 @@ import Films from '../View/Films/Film';
 import Contact from '../View/Contact/Contact';
 import NotFound from '../View/NotFound/NotFound';
 import Home from '../View/Home/Home';
+import SignUp from '../Component/SignUp/SignUp'
 
 import {Switch, Route} from 'react-router-dom';
 import * as actionCreators from '../Store/Action/ActionCreators/ActionCreators_FETCH'
@@ -32,6 +33,7 @@ function Swapi(props) {
                 <Route exact path='/' component={Home}/>
                 <Route exact path='/Films' component={Films}/>
                 <Route path='/Contact' component={Contact}/>
+                <Route path='/SignUp' component={SignUp}/>
                 <Route component={NotFound}/>
             </Switch>
         </div>

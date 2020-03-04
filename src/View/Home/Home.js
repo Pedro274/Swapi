@@ -1,7 +1,6 @@
 import React from 'react';
 import './Home.scss';
 import Cards from '../../Component/Cards/Cards';
-import 'bootstrap/dist/css/bootstrap.css';
 
 function Home() {
     return (
